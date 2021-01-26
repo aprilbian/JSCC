@@ -25,7 +25,7 @@ opt = TrainOptions().parse()
 opt.gan_mode = 'none'       # 'wgangp', 'lsgan', 'vanilla', 'none'
 
 # Set the input dataset
-opt.dataset_mode = 'CelebA'   # Current dataset:  CIFAR10, CelebA
+opt.dataset_mode = 'CIFAR10'   # Current dataset:  CIFAR10, CelebA
 
 
 if opt.dataset_mode in ['CIFAR10', 'CIFAR100']:
@@ -74,7 +74,7 @@ opt.C_channel = 12
 opt.SNR = 20
 
 opt.is_feedback = False
-opt.feedforward = 'EXPLICIT-RES-CE'
+opt.feedforward = 'IMPLICI'
 
 opt.N_pilot = 2              # Number of pilots for chanenl estimation
 opt.CE = 'MMSE'              # Channel Estimation Method
