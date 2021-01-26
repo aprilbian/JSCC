@@ -74,7 +74,7 @@ opt.C_channel = 12
 opt.SNR = 20
 
 opt.is_feedback = False
-opt.feedforward = 'IMPLICI'
+opt.feedforward = 'IMPLICIT'
 
 opt.N_pilot = 2              # Number of pilots for chanenl estimation
 opt.CE = 'MMSE'              # Channel Estimation Method
